@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Scholars' Shelf</title>
+  <link rel="icon" type="image/x-icon" href=" https://cdn.dribbble.com/userupload/18127115/file/original-ce057693d24592e2cd1bbd8b0ef58161.jpg?resize=2048x1457&vertical=center">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="Arcade ">
+  <meta name="keywords" content="Your comprehensive digital library for academic research. Access a vast collection of scholarly books and texts, curated to support your studies and discoveries. Dive deep into knowledge, anytime, anywhere ">
+  <meta name="description" content=" Your comprehensive digital library for academic research. Access a vast collection of scholarly books and texts, curated to support your studies and discoveries. Dive deep into knowledge, anytime, anywhere ">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="menu" viewBox="0 0 16 16">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z"
+        clip-rule="evenodd" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="angle-right" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M12.969 4.281L11.53 5.72L21.812 16l-10.28 10.281l1.437 1.438l11-11l.687-.719l-.687-.719z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="angle-left" viewBox="0 0 32 32">
+      <path fill="currentColor" d="m19.031 4.281l-11 11l-.687.719l.687.719l11 11l1.438-1.438L10.187 16L20.47 5.719z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="chevron-down" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M18.719 6.781L17.28 8.22L24.063 15H4v2h20.063l-6.782 6.781l1.438 1.438l8.5-8.5l.687-.719l-.687-.719z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="m13.281 6.781l-8.5 8.5l-.687.719l.687.719l8.5 8.5l1.438-1.438L7.938 17H28v-2H7.937l6.782-6.781z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M8 5.14v14l11-7l-11-7Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 256 256">
+      <path fill="currentColor"
+        d="m245.66 77.66l-29.9 29.9C209.72 177.58 150.67 232 80 232c-14.52 0-26.49-2.3-35.58-6.84c-7.33-3.67-10.33-7.6-11.08-8.72a8 8 0 0 1 3.85-11.93c.26-.1 24.24-9.31 39.47-26.84a110.93 110.93 0 0 1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8 8 0 0 1 13.65-4.92c.35.35 33.28 33.1 73.54 43.72V88a47.87 47.87 0 0 1 14.36-34.3A46.87 46.87 0 0 1 168.1 40a48.66 48.66 0 0 1 41.47 24H240a8 8 0 0 1 5.66 13.66Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 256 256">
+      <path fill="currentColor"
+        d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="linkedin" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" />
+    </symbol>
+  </svg>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <header id="header" class="site-header border-bottom border-dark">
+    <nav id="header-nav" class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="index.html">
+          <H2> Scholars' Shelf</H2>
+        </a>
+        <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="text-dark" width="20" height="20">
+            <use href="#menu" />
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="offcanvas-header px-4 pb-0">
+            <a class="navbar-brand" href="index.html">
+              <H4> Menu </H4>
+            </a>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul id="navbar" class="navbar-nav w-100 d-flex justify-content-between align-items-center">
+              <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                <H3> Scholars' Shelf</H3>
+              </a>
+              <ul class="list-unstyled d-lg-flex justify-content-md-between align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="about.html">About  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="mission.html">  Mission  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="Books.html"> Ebooks   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="Audiobooks.html">Audios  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="Articles.html"> Articles </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="CONTACT.HTML"> Contact </a>
+                </li>
+            
+
+              
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="billboard" class="position-relative overflow-hidden">
+    <div class="swiper main-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"
+          style="background-image: url( https://cdn.dribbble.com/userupload/13157460/file/original-98e74e86481aaed25387d58533adaf1a.gif); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="banner-content text-center bg-white bg-opacity-25 p-5">
+                  <h2> Digital Haven for Researchers  </h2>
+                  <p class="fs-4 fw-normal text-black">comprehensive research library in your pocket
+                   </p>
+                  <a href="Books.html" class="btn btn-primary">Collection</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"
+        style="background-image: url( https://cdn.dribbble.com/userupload/13157460/file/original-98e74e86481aaed25387d58533adaf1a.gif); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="banner-content text-center bg-white bg-opacity-25 p-5">
+                <h2> Audio and Articles</h2>
+                <p class="fs-4 fw-normal text-black">Audio content caters to different learning styles and allows for passive learning.
+                  Articles provide access to current research and specific information
+                 </p>
+                <a href="Books.html" class="btn btn-primary">Collection</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"
+        style="background-image: url(https://cdn.dribbble.com/userupload/13157460/file/original-98e74e86481aaed25387d58533adaf1a.gif); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="banner-content text-center bg-white bg-opacity-25 p-5">
+                <h2>  </h2>
+                <p class="fs-4 fw-normal text-black-bold">A wide range of academic disciplines are covered, while also suggesting a personalized space for authors  to share their works 
+                 </p>
+                <a href="Books.html" class="btn btn-primary">Collection</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-slider-pagination position-absolute text-center"></div>
+    </div>
+  </section>
+
+  <section id="about" class="padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <h3 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">
+             A vast collection of scholarly books and texts, curated to support your studies</h3>
+          <p data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1800" data-aos-once="true">
+            Unlock a world of academic insight with Scholars' Shelf. Explore a curated collection of research books,
+            designed to fuel your intellectual journey. Discover new perspectives,
+             access essential resources, and elevate your research with our intuitive digital library. 
+             Save your progress, and easily search for key information. We provide more than just access to research; 
+             we empower you to become a pioneer in your field. Our carefully selected collection of 
+             research books is designed to spark innovation, inspire critical thinking, and drive 
+             transformative research. Navigate a seamless digital experience, discover hidden gems 
+             of knowledge, and unlock the full potential of your intellectual capabilities. 
+             Scholars' Shelf is your catalyst for academic growth, providing the resources and insights
+              you need to redefine the boundaries of your research and shape the future of your discipline
+             Streamline your research process and maximize your productivity</p>
+          <a href="about.html" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Business and Management Section -->
+ <section id="business-management" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+  <div class="container">
+    <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+      <h3 class="display-7 mt-3">Business and Management</h3>
+    </div>
+    <div class="row">
+      <!-- Finance -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.audible.com/pd/Finance-Audiobook/B08XYZ1234">
+              <img src="https://cdn.dribbble.com/userupload/4005869/file/original-ad5ae66db7ad979d6b2d6cd452084bee.jpg?resize=1200x857&vertical=center" alt="audiobook-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="audiobooks.html">Finance</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.audible.com/pd/Finance-Audiobook/B08XYZ1234">Finance: Navigating Financial Markets</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Marketing -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyz123" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="videos.html">Marketing</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.youtube.com/embed/xyz123">Marketing: The Evolution of Digital Strategies</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Strategic Management -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.audible.com/pd/Strategic-Management-Audiobook/B08XYZ5678">
+              <img src="https://cdn.dribbble.com/userupload/4005869/file/original-ad5ae66db7ad979d6b2d6cd452084bee.jpg?resize=1200x857&vertical=center" alt="audiobook-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="audiobooks.html">Strategic Management</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.audible.com/pd/Strategic-Management-Audiobook/B08XYZ5678">Strategic Management: Crafting Winning Strategies</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Entrepreneurship -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyz456" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="videos.html">Entrepreneurship</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.youtube.com/embed/xyz456">Entrepreneurship: Building Successful Startups</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.audible.com/pd/Accounting-Audiobook/B08XYZ9101">
+              <img src="https://cdn.dribbble.com/userupload/4005869/file/original-ad5ae66db7ad979d6b2d6cd452084bee.jpg?resize=1200x857&vertical=center" alt="audiobook-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="audiobooks.html">Accounting</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.audible.com/pd/Accounting-Audiobook/B08XYZ9101">Accounting: Modern Practices for Financial Transparency</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="books" class="book-store position-relative">
+    <div class="container-fluid display-header d-flex flex-wrap justify-content-between pb-4">
+        <h3 class="mt-3">Famous Academic Books</h3>
+        <div class="btn-right d-flex flex-wrap align-items-center">
+            <a href="books.html" class="btn me-5">View all books</a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="bento-grid">
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                        <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Brief-History-Time-Stephen-Hawking/dp/0553380168">A Brief History of Time</a>
+                        </h5>
+                        <span class="author fs-6">by Stephen Hawking</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Origin-Species-Charles-Darwin/dp/1509827706">The Origin of Species</a>
+                        </h5>
+                        <span class="author fs-6">by Charles Darwin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Principia-Mathematica-Isaac-Newton/dp/0520009274">Principia Mathematica</a>
+                        </h5>
+                        <span class="author fs-6">by Isaac Newton</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Republic-Plato/dp/0140455116">The Republic</a>
+                        </h5>
+                        <span class="author fs-6">by Plato</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Origin-Species-Charles-Darwin/dp/1509827706">On the Origin of Species</a>
+                        </h5>
+                        <span class="author fs-6">by Charles Darwin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Art-War-Sun-Tzu/dp/1599869772">The Art of War</a>
+                        </h5>
+                        <span class="author fs-6">by Sun Tzu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Wealth-Nations-Adam-Smith/dp/1505577128">The Wealth of Nations</a>
+                        </h5>
+                        <span class="author fs-6">by Adam Smith</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Critique-Pure-Reason-Immanuel-Kant/dp/0486432548">Critique of Pure Reason</a>
+                        </h5>
+                        <span class="author fs-6">by Immanuel Kant</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bento-item">
+                <div class="book-card position-relative">
+                    <div class="image-holder zoom-effect">
+                      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                    </div>
+                    <div class="card-detail text-center pt-3 pb-2">
+                        <h5 class="card-title fs-5 text-uppercase">
+                            <a href="https://www.amazon.com/Divine-Comedy-Dante-Alighieri/dp/0451208633">The Divine Comedy</a>
+                        </h5>
+                        <span class="author fs-6">by Dante Alighieri</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+  .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      position: relative;
+      padding-bottom: 2rem;
+  }
+  .bento-item {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .bento-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #f7f7f7;
+      z-index: -1;
+  }
+  .book-card .image-holder {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+  }
+  .book-card .image-holder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .book-card .card-detail {
+      padding: 1rem;
+  }
+</style>
+               
+       
+
+  
+  <section id="testimonials" class="position-relative padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <h3 class="text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000"
+            data-aos-once="true"> Open access </h3>
+          <div class="review-content position-relative" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1500" data-aos-once="true">
+            <div class="swiper testimonial-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item">
+                    <blockquote class="fs-3 fw-light">We believe that research should have as wide a reach as possible and be put to use in making a difference in supporting social change and social justice.
+
+                      As a mission-led, not for profit publisher our goal is to move as much of our research-based publishing to open access as possible, especially work focused on the global social challenges.  </blockquote>
+                    <div class="author-detail">
+                      <div class="name fw-bold text-uppercase pt-2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item">
+                    <blockquote class="fs-3 fw-light">Our monographs, multi-authored and edited works include original scholarly research, thorough and structured reviews of important subjects and engaging works that push forward the boundaries of the disciplines in which we publish </blockquote>
+                    <div class="author-detail">
+                      <div class="name fw-bold text-uppercase pt-2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item">
+                    <blockquote class="fs-3 fw-light">Please note, we can only accept 
+                      from institutional librarians. If you are not a librarian but would like your institution 
+                      to take up please consider emailing your librarian with your request.
+                       All  requests will need to be sent from an institutional email address. </blockquote>
+                    <div class="author-detail">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-buttons text-center mt-5" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1800" data-aos-once="true">
+            <button class="swiper-prev testimonial-arrow-prev me-2">
+              <svg width="41" height="41">
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </button>
+            <span>|</span>
+            <button class="swiper-next testimonial-arrow-next ms-2">
+              <svg width="41" height="41">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+    <div class="container">
+      <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+        <h3 class="display-7 mt-3">Materials Science </h3>
+       
+      </div>
+      <div class="row">
+        <!-- Article 1: Astronomy -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.nasa.gov/topics/universe/index.html">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Astronomy</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.nasa.gov/topics/universe/index.html">Exploring the Mysteries of the Universe</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 2: Geology -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.usgs.gov/science/geology">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Geology</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.usgs.gov/science/geology">The Dynamic Earth: Plate Tectonics and Natural Disasters</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 3: Environmental Science -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.epa.gov/environmental-topics">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Environmental Science</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.epa.gov/environmental-topics">Sustainable Development: Balancing Ecology and Economy</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 4: Materials Science -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.nature.com/subjects/materials-science">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Materials Science</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.nature.com/subjects/materials-science">Innovations in Materials: From Nanotechnology to Biomaterials</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 5: Astronomy -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.space.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Astronomy</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.space.com/">Black Holes: The Dark Secrets of the Cosmos</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 6: Geology -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.geolsoc.org.uk/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Geology</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.geolsoc.org.uk/">Volcanoes and Earthquakes: Forces of Nature</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 7: Environmental Science -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.unep.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Environmental Science</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.unep.org/">Climate Change: Challenges and Solutions</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 8: Materials Science -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.mrs.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Materials Science</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.mrs.org/">Smart Materials: The Future of Engineering</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 9: Astronomy -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.eso.org/public/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Astronomy</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.eso.org/public/">The Search for Exoplanets: Are We Alone?</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 10: Geology -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.geologypage.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan  22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Geology</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.geologypage.com/">The Rock Cycle: Earth's Ever-Changing Surface</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="departments" class="padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+            Departments Ebooks 
+          </h3>
+          <div class="accordion accordion-flush" id="accordionFlush" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">
+            
+            <!-- Department of Computer Science -->
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  Department of Computer Science
+                </button>
+              </h4>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">
+                  <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+                      <!-- Book Cards -->
+                      <div class="col">
+                        <div class="book-card position-relative">
+                          <div class="image-holder zoom-effect">
+                            <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+                          </div>
+                          <div class="card-detail text-center pt-3 pb-2">
+                            <h5 class="card-title fs-5 text-uppercase">
+                              <a href="https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844">Introduction to Algorithms</a>
+                            </h5>
+                            <span class="author fs-6">by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Repeat for other books -->
+                       <!-- Book Cards -->
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844">Introduction to Algorithms</a>
+      </h5>
+      <span class="author fs-6">by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043">The Art of Computer Programming</a>
+      </h5>
+      <span class="author fs-6">by Donald E. Knuth</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Artificial-Intelligence-Modern-Approach-4th/dp/0134610997">Artificial Intelligence: A Modern Approach</a>
+      </h5>
+      <span class="author fs-6">by Stuart Russell, Peter Norvig</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670">Code Complete</a>
+      </h5>
+      <span class="author fs-6">by Steve McConnell</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612">Design Patterns: Elements of Reusable Object-Oriented Software</a>
+      </h5>
+      <span class="author fs-6">by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Structure-Interpretation-Computer-Programs-Engineering/dp/0262510871">Structure and Interpretation of Computer Programs</a>
+      </h5>
+      <span class="author fs-6">by Harold Abelson, Gerald Jay Sussman, Julie Sussman</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code: A Handbook of Agile Software Craftsmanship</a>
+      </h5>
+      <span class="author fs-6">by Robert C. Martin</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X">Introduction to the Theory of Computation</a>
+      </h5>
+      <span class="author fs-6">by Michael Sipser</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X">Computer Systems: A Programmer's Perspective</a>
+      </h5>
+      <span class="author fs-6">by Randal E. Bryant, David R. O'Hallaron</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Operating-System-Concepts-Abraham-Silberschatz/dp/1118063333">Operating System Concepts</a>
+      </h5>
+      <span class="author fs-6">by Abraham Silberschatz, Peter B. Galvin, Greg Gagne</span>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Artificial-Intelligence-Modern-Approach-4th/dp/0134610997">Artificial Intelligence: A Modern Approach</a>
+      </h5>
+      <span class="author fs-6">by Stuart Russell, Peter Norvig</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618">Deep Learning</a>
+      </h5>
+      <span class="author fs-6">by Ian Goodfellow, Yoshua Bengio, Aaron Courville</span>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Hacking-Art-Exploitation-Jon-Erickson/dp/1593271441">Hacking: The Art of Exploitation</a>
+      </h5>
+      <span class="author fs-6">by Jon Erickson</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Cybersecurity-Essentials-Charles-Brooks/dp/1119362393">Cybersecurity Essentials</a>
+      </h5>
+      <span class="author fs-6">by Charles J. Brooks</span>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code: A Handbook of Agile Software Craftsmanship</a>
+      </h5>
+      <span class="author fs-6">by Robert C. Martin</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612">Design Patterns: Elements of Reusable Object-Oriented Software</a>
+      </h5>
+      <span class="author fs-6">by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Python-Data-Science-Handbook-Essential/dp/1098121228">Python for Data Science Handbook</a>
+      </h5>
+      <span class="author fs-6">by Jake VanderPlas</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/1492041130">Data Science from Scratch</a>
+      </h5>
+      <span class="author fs-6">by Joel Grus</span>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="book-card position-relative">
+    <div class="image-holder zoom-effect">
+      <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+    </div>
+    <div class="card-detail text-center pt-3 pb-2">
+      <h5 class="card-title fs-5 text-uppercase">
+        <a href="https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646">Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</a>
+      </h5>
+      <span class="author fs-6">by Aurélien Géron</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ 
+</section>
+ <!-- Department of Mechanical Engineering -->
+<div class="accordion-item">
+  <h4 class="accordion-header" id="flush-headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
+      Department of Mechanical Engineering
+    </button>
+  </h4>
+  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+    <div class="accordion-body">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+          <!-- Book Cards -->
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Shigleys-Mechanical-Engineering-Design-McGraw-Hill/dp/0073398209">Shigley's Mechanical Engineering Design</a>
+                </h5>
+                <span class="author fs-6">by Richard Budynas, Keith Nisbett</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Mechanics-Materials-Russell-C-Hibbeler/dp/0134319656">Mechanics of Materials</a>
+                </h5>
+                <span class="author fs-6">by Russell C. Hibbeler</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Thermodynamics-Engineering-Approach-Yunus-Cengel/dp/0073398179">Thermodynamics: An Engineering Approach</a>
+                </h5>
+                <span class="author fs-6">by Yunus A. Çengel, Michael A. Boles</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Fluid-Mechanics-Fundamentals-Applications-Cengel/dp/0073398276">Fluid Mechanics: Fundamentals and Applications</a>
+                </h5>
+                <span class="author fs-6">by Yunus A. Çengel, John M. Cimbala</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Heat-Mass-Transfer-Fundamentals-Applications/dp/0073398195">Heat and Mass Transfer: Fundamentals and Applications</a>
+                </h5>
+                <span class="author fs-6">by Yunus A. Çengel, Afshin J. Ghajar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Machinery-Handbook-Toolbox-Erik-Oberg/dp/083113091X">Machinery's Handbook</a>
+                </h5>
+                <span class="author fs-6">by Erik Oberg, Franklin D. Jones, Holbrook L. Horton, Henry H. Ryffel</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Engineering-Mechanics-Dynamics-Russell-Hibbeler/dp/0133915387">Engineering Mechanics: Dynamics</a>
+                </h5>
+                <span class="author fs-6">by Russell C. Hibbeler</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Introduction-Finite-Element-Analysis-Engineering/dp/0134738722">Introduction to Finite Element Analysis and Design</a>
+                </h5>
+                <span class="author fs-6">by Nam-Ho Kim, Bhavani V. Sankar, Ashok V. Kumar</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Mechanical-Vibrations-Singiresu-Rao/dp/013436130X">Mechanical Vibrations</a>
+                </h5>
+                <span class="author fs-6">by Singiresu S. Rao</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Internal-Combustion-Engine-Fundamentals-Heywood/dp/0071004998">Internal Combustion Engine Fundamentals</a>
+                </h5>
+                <span class="author fs-6">by John B. Heywood</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Department of Biological Sciences -->
+<div class="accordion-item">
+  <h4 class="accordion-header" id="flush-headingFour">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="true" aria-controls="flush-collapseFour">
+      Department of Biological Sciences
+    </button>
+  </h4>
+  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush">
+    <div class="accordion-body">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+          <!-- Book Cards -->
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Molecular-Biology-Gene-James-Watson/dp/080539592X">Molecular Biology of the Gene</a>
+                </h5>
+                <span class="author fs-6">by James D. Watson, Tania A. Baker, Stephen P. Bell, Alexander Gann, Michael Levine, Richard Losick</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Principles-Genetics-Snell-Noel/dp/047169939X">Principles of Genetics</a>
+                </h5>
+                <span class="author fs-6">by D. Peter Snustad, Michael J. Simmons</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Genes-IX-Benjamin-Lewin/dp/0763758681">Genes IX</a>
+                </h5>
+                <span class="author fs-6">by Benjamin Lewin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Neuroscience-Exploring-Brain-Mark-Bear/dp/0781778174">Neuroscience: Exploring the Brain</a>
+                </h5>
+                <span class="author fs-6">by Mark F. Bear, Barry W. Connors, Michael A. Paradiso</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Principles-Neural-Science-Eric-Kandel/dp/1259642232">Principles of Neural Science</a>
+                </h5>
+                <span class="author fs-6">by Eric R. Kandel, James H. Schwartz, Thomas M. Jessell</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Ecology-Concepts-Applications-Manuel-Molles/dp/0077837282">Ecology: Concepts and Applications</a>
+                </h5>
+                <span class="author fs-6">by Manuel C. Molles Jr.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Essential-Cell-Biology-Bruce-Alberts/dp/039368039X">Essential Cell Biology</a>
+                </h5>
+                <span class="author fs-6">by Bruce Alberts, Dennis Bray, Karen Hopkin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Origin-Species-Charles-Darwin/dp/0451529065">On the Origin of Species</a>
+                </h5>
+                <span class="author fs-6">by Charles Darwin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Microbiology-Introduction-Gerard-Tortora/dp/0134605189">Microbiology: An Introduction</a>
+                </h5>
+                <span class="author fs-6">by Gerard J. Tortora, Berdell R. Funke, Christine L. Case</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Biology-Neil-Campbell/dp/0134093410">Biology</a>
+                </h5>
+                <span class="author fs-6">by Neil A. Campbell, Jane B. Reece</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Immunology-Kuby-Thomas-Kindt/dp/1429219199">Kuby Immunology</a>
+                </h5>
+                <span class="author fs-6">by Thomas J. Kindt, Richard A. Goldsby, Barbara A. Osborne</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Developmental-Biology-Scott-Gilbert/dp/1605356044">Developmental Biology</a>
+                </h5>
+                <span class="author fs-6">by Scott F. Gilbert</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Biochemistry-Jeremy-Berg/dp/1464126100">Biochemistry</a>
+                </h5>
+                <span class="author fs-6">by Jeremy M. Berg, John L. Tymoczko, Lubert Stryer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Plant-Physiology-Development-Lincoln-Taiz/dp/1605357458">Plant Physiology and Development</a>
+                </h5>
+                <span class="author fs-6">by Lincoln Taiz, Eduardo Zeiger</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Behavioral-Neuroscience-S-Marc-Breedlove/dp/1605354181">Behavioral Neuroscience</a>
+                </h5>
+                <span class="author fs-6">by S. Marc Breedlove, Neil V. Watson</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Evolution-Douglas-Futuyma/dp/1605356052">Evolution</a>
+                </h5>
+                <span class="author fs-6">by Douglas J. Futuyma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Human-Physiology-Integration-Mechanisms-Control/dp/0321981227">Human Physiology: An Integrated Approach</a>
+                </h5>
+                <span class="author fs-6">by Dee Unglaub Silverthorn</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Principles-Biochemistry-David-Nelson/dp/1464126119">Principles of Biochemistry</a>
+                </h5>
+                <span class="author fs-6">by David L. Nelson, Michael M. Cox</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Internal-Combustion-Engine-Fundamentals-Heywood/dp/0071004998">Internal Combustion Engine Fundamentals</a>
+                </h5>
+                <span class="author fs-6">by John B. Heywood</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h4 class="accordion-header" id="flush-headingHumanities">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseHumanities" aria-expanded="false" aria-controls="flush-collapseHumanities">
+      Department of Humanities
+    </button>
+  </h4>
+  <div id="flush-collapseHumanities" class="accordion-collapse collapse" aria-labelledby="flush-headingHumanities" data-bs-parent="#accordionFlush">
+    <div class="accordion-body">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/World-History-Patrick-Karl-ONeil/dp/0393912984">World History: Patterns of Interaction</a>
+                </h5>
+                <span class="author fs-6">by Patrick Karl O'Brien</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Norton-Anthology-English-Literature-Major/dp/0393912461">The Norton Anthology of English Literature</a>
+                </h5>
+                <span class="author fs-6">Various Authors</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Meditations-Marcus-Aurelius/dp/0140449337">Meditations</a>
+                </h5>
+                <span class="author fs-6">by Marcus Aurelius</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Language-Instinct-How-Mind-Creates/dp/0060976516">The Language Instinct</a>
+                </h5>
+                <span class="author fs-6">by Steven Pinker</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Archaeology-Theories-Methods-Colin-Renfrew/dp/0500289789">Archaeology: Theories, Methods and Practice</a>
+                </h5>
+                <span class="author fs-6">by Colin Renfrew, Paul Bahn</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/History-Ancient-Egypt-Toby-Wilkinson/dp/0713994791">The Rise and Fall of Ancient Egypt</a>
+                </h5>
+                <span class="author fs-6">by Toby Wilkinson</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Pride-Prejudice-Jane-Austen/dp/0141439513">Pride and Prejudice</a>
+                </h5>
+                <span class="author fs-6">by Jane Austen</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">   
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Thus-Spoke-Zarathustra-Friedrich-Nietzsche/dp/0521639871">Thus Spoke Zarathustra</a>
+                </h5>
+                <span class="author fs-6">by Friedrich Nietzsche</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Historical-Linguistics-An-Introduction-Third/dp/0748645929">Historical Linguistics: An Introduction</a>
+                </h5>
+                <span class="author fs-6">by Lyle Campbell</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316251">Sapiens: A Brief History of Humankind</a>
+                </h5>
+                <span class="author fs-6">by Yuval Noah Harari</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Critique-Pure-Reason-Immanuel-Kant/dp/052165727X">Critique of Pure Reason</a>
+                </h5>
+                <span class="author fs-6">by Immanuel Kant</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Understanding-Language-History-Change-Lyle/dp/1107693951">Understanding Language Change</a>
+                </h5>
+                <span class="author fs-6">by Lyle Campbell</span>
+              </div>
+            </div>
+          </div>
+           <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/History-World-Six-Glasses/dp/0802715524">A History of the World in Six Glasses</a>
+                </h5>
+                <span class="author fs-6">by Tom Standage</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Moby-Dick-Herman-Melville/dp/0142437248">Moby-Dick</a>
+                </h5>
+                <span class="author fs-6">by Herman Melville</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Republic-Plato/dp/0521639855">The Republic</a>
+                </h5>
+                <span class="author fs-6">by Plato</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Language-Myth-Geoffrey-Pullum/dp/0140260703">The Language Myth</a>
+                </h5>
+                <span class="author fs-6">by Geoffrey K. Pullum</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="book-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="https://cdn.dribbble.com/userupload/3565049/file/original-a1d3ff6a0582eebb80ad77a102977fff.png?resize=1504x1128&vertical=center" alt="book-item" class="img-fluid zoom-in">
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-5 text-uppercase">
+                  <a href="https://www.amazon.com/Lost-Cities-Gavin-Menzies/dp/0553815259">The Lost Cities of Atlantis, Ancient Europe & the Mediterranean</a>
+                </h5>
+                <span class="author fs-6">by Gavin Menzies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="audiobooks" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+  <div class="container">
+    <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+      <h3 class="display-7 mt-3">Medicine Audiobooks</h3>
+    </div>
+    <div class="row">
+      <!-- Audiobook 1: Cardiology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.audible.com/pd/Advances-in-Heart-Health-Audiobook/B08XYZ1234">
+              <img src="https://cdn.dribbble.com/userupload/4005869/file/original-ad5ae66db7ad979d6b2d6cd452084bee.jpg?resize=1200x857&vertical=center" alt="audiobook-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="audiobooks.html">Cardiology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.audible.com/pd/Advances-in-Heart-Health-Audiobook/B08XYZ1234">Advances in Heart Health: Innovations in Cardiology</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Audiobook 2: Oncology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.audible.com/pd/Breakthroughs-in-Cancer-Research-Audiobook/B08XYZ5678">
+              <img src="https://cdn.dribbble.com/userupload/4005869/file/original-ad5ae66db7ad979d6b2d6cd452084bee.jpg?resize=1200x857&vertical=center" alt="audiobook-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="audiobooks.html">Oncology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.audible.com/pd/Breakthroughs-in-Cancer-Research-Audiobook/B08XYZ5678">Breakthroughs in Cancer Research and Treatment</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="youtube-videos" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+  <div class="container">
+    <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+      <h3 class="display-7 mt-3">Medicine YouTube Videos</h3>
+    </div>
+    <div class="row">
+      <!-- Video 1: Cardiology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyz123" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="videos.html">Cardiology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.youtube.com/embed/xyz123">Advances in Heart Health: Innovations in Cardiology</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Video 2: Oncology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/xyz456" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan 22, 2025</span>
+            <span class="meta-category">/ <a href="videos.html">Oncology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.youtube.com/embed/xyz456">Breakthroughs in Cancer Research and Treatment</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  
+
+
+  <footer id="footer" class="overflow-hidden padding-large pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="footer-top-area pb-5">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000"
+              data-aos-once="true">
+              <div class="footer-menu">
+               <h2>Scholars' Shelf </h2>
+                <p>  Unlock a world of academic insight with Scholars' Shelf. Explore a curated collection of research books,
+                   designed to fuel your intellectual journey. Discover new perspectives,
+                   access essential resources, and elevate your research with our intuitive digital library.  </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200"
+              data-aos-once="true">
+              <div class="footer-menu">
+
+               
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200"
+              data-aos-once="true">
+              
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1400"
+              data-aos-once="true">
+              <div class="footer-menu contact-item">
+                <h5 class="widget-title pb-2">Contact info</h5>
+                <ul class="menu-list list-unstyled">
+                  <li class="menu-item pb-2">
+                    <a href="#">Abuja , Nigeria </a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="#">08028308362</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600"
+              data-aos-once="true">
+              <div class="footer-menu">
+                <h5 class="widget-title pb-2">Social info</h5>
+                <p>You can follow us on our social platforms to get updates.</p>
+                <div class="social-links">
+                  <ul class="d-flex list-unstyled">
+                    <li>
+                      <a href="#">
+                        <svg class="facebook">
+                          <use xlink:href="#facebook">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="twitter">
+                          <use xlink:href="#twitter">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="linkedin">
+                          <use xlink:href="#linkedin">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="youtube">
+                          <use xlink:href="#youtube">
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="footer-bottom" class="border-top border-dark">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="col-12 text-center">
+          <div class="copyright pt-3">
+            <p>© Copyright 2025 <a href=""
+                target="_blank"><b></b></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Popup -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40"
+              height="40">
+              <use xlink:href="#close-sharp"></use>
+            </svg></button>
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

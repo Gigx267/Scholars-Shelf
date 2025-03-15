@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Scholars' Shelf</title>
+  <link rel="icon" type="image/x-icon" href=" https://cdn.dribbble.com/userupload/18127115/file/original-ce057693d24592e2cd1bbd8b0ef58161.jpg?resize=2048x1457&vertical=center">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="Arcade ">
+  <meta name="keywords" content="Your comprehensive digital library for academic research. Access a vast collection of scholarly books and texts, curated to support your studies and discoveries. Dive deep into knowledge, anytime, anywhere ">
+  <meta name="description" content=" Your comprehensive digital library for academic research. Access a vast collection of scholarly books and texts, curated to support your studies and discoveries. Dive deep into knowledge, anytime, anywhere ">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="menu" viewBox="0 0 16 16">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z"
+        clip-rule="evenodd" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="angle-right" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M12.969 4.281L11.53 5.72L21.812 16l-10.28 10.281l1.437 1.438l11-11l.687-.719l-.687-.719z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="angle-left" viewBox="0 0 32 32">
+      <path fill="currentColor" d="m19.031 4.281l-11 11l-.687.719l.687.719l11 11l1.438-1.438L10.187 16L20.47 5.719z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="chevron-down" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M18.719 6.781L17.28 8.22L24.063 15H4v2h20.063l-6.782 6.781l1.438 1.438l8.5-8.5l.687-.719l-.687-.719z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="m13.281 6.781l-8.5 8.5l-.687.719l.687.719l8.5 8.5l1.438-1.438L7.938 17H28v-2H7.937l6.782-6.781z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M8 5.14v14l11-7l-11-7Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 32 32">
+      <path fill="currentColor"
+        d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 256 256">
+      <path fill="currentColor"
+        d="m245.66 77.66l-29.9 29.9C209.72 177.58 150.67 232 80 232c-14.52 0-26.49-2.3-35.58-6.84c-7.33-3.67-10.33-7.6-11.08-8.72a8 8 0 0 1 3.85-11.93c.26-.1 24.24-9.31 39.47-26.84a110.93 110.93 0 0 1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8 8 0 0 1 13.65-4.92c.35.35 33.28 33.1 73.54 43.72V88a47.87 47.87 0 0 1 14.36-34.3A46.87 46.87 0 0 1 168.1 40a48.66 48.66 0 0 1 41.47 24H240a8 8 0 0 1 5.66 13.66Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 256 256">
+      <path fill="currentColor"
+        d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" id="linkedin" viewBox="0 0 24 24">
+      <path fill="currentColor"
+        d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" />
+    </symbol>
+  </svg>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <header id="header" class="site-header border-bottom border-dark">
+    <nav id="header-nav" class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="index.html">
+          <H2> Scholars' Shelf</H2>
+        </a>
+        <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="text-dark" width="20" height="20">
+            <use href="#menu" />
+          </svg>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+          <div class="offcanvas-header px-4 pb-0">
+            <a class="navbar-brand" href="index.html">
+              <H4> Menu </H4>
+            </a>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"
+              data-bs-target="#bdNavbar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul id="navbar" class="navbar-nav w-100 d-flex justify-content-between align-items-center">
+              <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                <H3> Scholars' Shelf</H3>
+              </a>
+              <ul class="list-unstyled d-lg-flex justify-content-md-between align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link ms-0" href="index.html">Home  </a>
+                  </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="mission.html">  Mission  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="Books.html"> Ebooks   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="Audiobooks.html">Audios  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="Articles.html"> Articles </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-0" href="CONTACT.HTML"> Contact </a>
+                </li>
+            
+
+              
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="billboard" class="position-relative overflow-hidden">
+    <div class="swiper main-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"
+          style="background-image: url( https://cdn.dribbble.com/userupload/15350548/file/original-9c91ff2439766e50ee3d8065c49b718a.gif); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="banner-content text-center bg-white bg-opacity-25 p-5">
+                  <h2> Articles   </h2>
+                 
+                   </p>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    
+      <div class="main-slider-pagination position-absolute text-center"></div>
+    </div>
+  </section>
+  <section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+    <div class="container">
+      <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+        <h3 class="display-7 mt-3">Medicine</h3>
+      </div>
+      <div class="row">
+        <!-- Article 1: Cardiology -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.acc.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Cardiology</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.acc.org/">Advances in Heart Health: Innovations in Cardiology</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 2: Oncology -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.cancer.gov/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Oncology</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.cancer.gov/">Breakthroughs in Cancer Research and Treatment</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 3: Neurology -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.aan.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Neurology</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.aan.com/">Understanding the Brain: Advances in Neurology</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 4: Surgery -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.facs.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Surgery</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.facs.org/">Revolutionizing Surgery: Minimally Invasive Techniques</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 5: Public Health -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.who.int/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Public Health</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.who.int/">Global Health Initiatives: Tackling Public Health Challenges</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+    <div class="container">
+      <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+        <h3 class="display-7 mt-3">Business, Management, and Economics</h3>
+      </div>
+      <div class="row">
+        <!-- Article 1: Finance -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.cfainstitute.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Finance</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.cfainstitute.org/">Navigating Financial Markets: Trends and Strategies</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 2: Marketing -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.ama.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Marketing</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.ama.org/">The Evolution of Digital Marketing in the Modern Era</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 3: Strategic Management -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.strategy-business.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Strategic Management</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.strategy-business.com/">Crafting Winning Strategies for Business Growth</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 4: Entrepreneurship -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.entrepreneur.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Entrepreneurship</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.entrepreneur.com/">Building the Future: Stories of Successful Startups</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 5: Accounting -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.aicpa.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Accounting</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.aicpa.org/">Modern Accounting Practices for Financial Transparency</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 6: Econometrics -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.econometricsociety.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Econometrics</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.econometricsociety.org/">Quantitative Analysis in Economics: The Role of Econometrics</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 7: Macroeconomics -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.imf.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Macroeconomics</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.imf.org/">Global Economic Trends: Insights from Macroeconomics</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 8: Microeconomics -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.aeaweb.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Microeconomics</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.aeaweb.org/">Understanding Market Behavior: Principles of Microeconomics</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 9: Development Economics -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.worldbank.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Development Economics</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.worldbank.org/">Economic Growth and Poverty Reduction: The Role of Development Economics</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000"
+data-aos-once="true">
+<div class="container">
+  <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+    <h3 class="display-7 mt-3"> Social Sciences</h3>
+   
+  </div>
+  <div class="row">
+
+    <!-- Article 1: Political Science -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.jstor.org/stable/10.2307/1963954"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Political Science</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.jstor.org/stable/10.2307/1963954">The Role of Democracy in Modern Governance</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 2: Sociology -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.nytimes.com/2020/06/12/us/social-inequality-america.html"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Sociology</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.nytimes.com/2020/06/12/us/social-inequality-america.html">Understanding Social Inequality in the 21st Century</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 3: Anthropology -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.sapiens.org/culture/cultural-evolution/"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Anthropology</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.sapiens.org/culture/cultural-evolution/">Cultural Evolution: How Societies Adapt Over Time</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 4: Psychology -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.apa.org/news/press/releases/2019/05/social-media-mental-health"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Psychology</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.apa.org/news/press/releases/2019/05/social-media-mental-health">The Impact of Social Media on Mental Health</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 5: Geography -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.nationalgeographic.com/environment/article/climate-change"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Geography</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.nationalgeographic.com/environment/article/climate-change">Climate Change and Its Effects on Global Landscapes</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 6: International Relations -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.cfr.org/backgrounder/future-global-diplomacy"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">International Relations</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.cfr.org/backgrounder/future-global-diplomacy">The Future of Global Diplomacy in a Multipolar World</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 7: Communication Studies -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.brookings.edu/research/the-role-of-media-in-shaping-public-opinion/"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Communication Studies</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.brookings.edu/research/the-role-of-media-in-shaping-public-opinion/">The Role of Media in Shaping Public Opinion</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 8: Political Science -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.theguardian.com/world/2020/jan/15/rise-of-populism-global-politics"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Political Science</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.theguardian.com/world/2020/jan/15/rise-of-populism-global-politics">The Rise of Populism in Global Politics</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 9: Sociology -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.sciencedirect.com/science/article/pii/S026427511930123X"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Sociology</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.sciencedirect.com/science/article/pii/S026427511930123X">Urbanization and Its Social Consequences</a>
+        </h5>
+      </div>
+    </div>
+
+    <!-- Article 10: Psychology -->
+    <div class="col-lg-4 mb-4">
+      <div class="card border-0 rounded-0">
+        <div class="card-image zoom-effect">
+          <a href="https://www.psychologicalscience.org/news/releases/the-psychology-of-decision-making-in-high-stress-environments.html"> <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="card-body text-capitalize mt-3">
+        <div class="card-meta fs-6">
+          <span class="meta-date">Jan  22, 2025</span>
+          <span class="meta-category">/ <a href="blog.html">Psychology</a></span>
+        </div>
+        <h5 class="card-title">
+          <a href="https://www.psychologicalscience.org/news/releases/the-psychology-of-decision-making-in-high-stress-environments.html">The Psychology of Decision-Making in High-Stress Environments</a>
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+  <div class="container">
+    <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+      <h3 class="display-7 mt-3">Materials Science </h3>
+     
+    </div>
+    <div class="row">
+      <!-- Article 1: Astronomy -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.nasa.gov/topics/universe/index.html">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Astronomy</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.nasa.gov/topics/universe/index.html">Exploring the Mysteries of the Universe</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 2: Geology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.usgs.gov/science/geology">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Geology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.usgs.gov/science/geology">The Dynamic Earth: Plate Tectonics and Natural Disasters</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 3: Environmental Science -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.epa.gov/environmental-topics">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Environmental Science</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.epa.gov/environmental-topics">Sustainable Development: Balancing Ecology and Economy</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 4: Materials Science -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.nature.com/subjects/materials-science">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Materials Science</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.nature.com/subjects/materials-science">Innovations in Materials: From Nanotechnology to Biomaterials</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 5: Astronomy -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.space.com/">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Astronomy</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.space.com/">Black Holes: The Dark Secrets of the Cosmos</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 6: Geology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.geolsoc.org.uk/">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Geology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.geolsoc.org.uk/">Volcanoes and Earthquakes: Forces of Nature</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 7: Environmental Science -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.unep.org/">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Environmental Science</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.unep.org/">Climate Change: Challenges and Solutions</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 8: Materials Science -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.mrs.org/">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Materials Science</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.mrs.org/">Smart Materials: The Future of Engineering</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 9: Astronomy -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.eso.org/public/">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Astronomy</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.eso.org/public/">The Search for Exoplanets: Are We Alone?</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 10: Geology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.geologypage.com/">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Geology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.geologypage.com/">The Rock Cycle: Earth's Ever-Changing Surface</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+  <div class="container">
+    <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+      <h3 class="display-7 mt-3"> Arts and Humanities</h3>
+    
+    </div>
+    <div class="row">
+      <!-- Article 1: History of Art -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.metmuseum.org/toah/hd/rena/hd_rena.htm">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">History of Art</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.metmuseum.org/toah/hd/rena/hd_rena.htm">The Renaissance: A Revolution in Art and Culture</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 2: Musicology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.britannica.com/art/musicology">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Musicology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.britannica.com/art/musicology">The Evolution of Musicology: From Antiquity to Modernity</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 3: Theatre Studies -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.britannica.com/art/theatre">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Theatre Studies</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.britannica.com/art/theatre">The Origins and Development of Theatre</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 4: Classical Studies -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.britannica.com/topic/classical-scholarship">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Classical Studies</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.britannica.com/topic/classical-scholarship">The Legacy of Ancient Greece and Rome</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 5: Religious Studies -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.britannica.com/topic/religion">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Religious Studies</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.britannica.com/topic/religion">Comparative Religion: Understanding World Faiths</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 6: Biochemistry -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.nature.com/subjects/biochemistry">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Biochemistry</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.nature.com/subjects/biochemistry">The Role of Enzymes in Metabolic Pathways</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 7: Molecular Biology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/molecular-biology">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Molecular Biology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/molecular-biology">DNA Replication and Genetic Engineering</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 8: Physiology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.physiology.org/">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Physiology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.physiology.org/">Human Physiology: The Science of Life</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 9: Zoology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.britannica.com/science/zoology">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Zoology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.britannica.com/science/zoology">Exploring Animal Behavior and Evolution</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 10: Botany -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.britannica.com/science/botany">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Botany</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.britannica.com/science/botany">The Science of Plant Life and Ecosystems</a>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Article 11: Pharmacology -->
+      <div class="col-lg-4 mb-4">
+        <div class="card border-0 rounded-0">
+          <div class="card-image zoom-effect">
+            <a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/pharmacology">
+              <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="card-body text-capitalize mt-3">
+          <div class="card-meta fs-6">
+            <span class="meta-date">Jan  22, 2025</span>
+            <span class="meta-category">/ <a href="blog.html">Pharmacology</a></span>
+          </div>
+          <h5 class="card-title">
+            <a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/pharmacology">Drug Development and Therapeutic Innovations</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+    <div class="container">
+      <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+        <h3 class="display-7 mt-3">Professional Fields</h3>
+      </div>
+      <div class="row">
+        <!-- Article 1: Architecture -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.archdaily.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Architecture</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.archdaily.com/">Innovative Designs: The Future of Sustainable Architecture</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 2: Education -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.ed.gov/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Education</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.ed.gov/">Revolutionizing Education: Technology in the Classroom</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 3: Journalism -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.nytimes.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Journalism</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.nytimes.com/">The Role of Journalism in a Digital Age</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 4: Library and Information Science -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.ala.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Library and Information Science</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.ala.org/">The Evolution of Libraries in the Information Era</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 5: Social Work -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.socialworkers.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Social Work</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.socialworkers.org/">Empowering Communities: The Impact of Social Work</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 6: Veterinary Medicine -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.avma.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Veterinary Medicine</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.avma.org/">Advancements in Animal Health and Care</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 7: Agriculture -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.usda.gov/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Agriculture</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.usda.gov/">Sustainable Farming: Feeding the Future</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="blog-posts" class="padding-large pb-0" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+    <div class="container">
+      <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4">
+        <h3 class="display-7 mt-3">Computer Science and Engineering</h3>
+      </div>
+      <div class="row">
+        <!-- Article 1: Artificial Intelligence -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.deepmind.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Artificial Intelligence</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.deepmind.com/">The Future of AI: From Machine Learning to General Intelligence</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 2: Cybersecurity -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.cisa.gov/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Cybersecurity</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.cisa.gov/">Protecting Digital Frontiers: Advances in Cybersecurity</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 3: Software Engineering -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.ieee.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Software Engineering</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.ieee.org/">Building Scalable Systems: Principles of Software Engineering</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 4: Data Science -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.kaggle.com/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Data Science</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.kaggle.com/">Harnessing Big Data: Insights from Data Science</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 5: Mechanical Engineering -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.asme.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Mechanical Engineering</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.asme.org/">Innovations in Mechanical Design and Robotics</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 6: Electrical Engineering -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.ieee.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Electrical Engineering</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.ieee.org/">The Future of Power Systems and Renewable Energy</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 7: Chemical Engineering -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.aiche.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Chemical Engineering</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.aiche.org/">Advancements in Process Engineering and Sustainability</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 8: Aerospace Engineering -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.nasa.gov/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Aerospace Engineering</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.nasa.gov/">Exploring the Skies: Innovations in Aerospace Technology</a>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Article 9: Civil Engineering -->
+        <div class="col-lg-4 mb-4">
+          <div class="card border-0 rounded-0">
+            <div class="card-image zoom-effect">
+              <a href="https://www.asce.org/">
+                <img src="https://cdn.dribbble.com/userupload/15706204/file/original-e9221b561684b308dfd75693528f9403.jpg?resize=2048x1638&vertical=center" alt="blog-img" class="zoom-in img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="card-body text-capitalize mt-3">
+            <div class="card-meta fs-6">
+              <span class="meta-date">Jan 22, 2025</span>
+              <span class="meta-category">/ <a href="blog.html">Civil Engineering</a></span>
+            </div>
+            <h5 class="card-title">
+              <a href="https://www.asce.org/">Building the Future: Infrastructure and Urban Development</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <h3 class="py-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">
+            Scholars' Shelf: where intellectual journeys begin, and the boundless horizons of understanding unfold </h3>
+          <p data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1800" data-aos-once="true">
+            Our intuitive digital library empowers you to transcend 
+             the boundaries of traditional learning and forge new pathways in your
+           field. Experience the transformative power of knowledge with Scholars' Shelf. From foundational 
+           texts to the latest groundbreaking studies, we offer an unparalleled range of resources. Unlock new 
+           dimensions of understanding, access critical data, and elevate your research to unprecedented heights.
+            Scholars' Shelf is your essential partner in the pursuit of scholarly excellence, 
+            providing the tools and resources you need to navigate the 
+            complexities of your field and contribute meaningfully to the world of knowledge.   </p>
+          <a href="about.html" class="btn btn-outline-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonials" class="position-relative padding-large">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <h3 class="text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000"
+            data-aos-once="true"> Open access </h3>
+          <div class="review-content position-relative" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1500" data-aos-once="true">
+            <div class="swiper testimonial-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item">
+                    <blockquote class="fs-3 fw-light">We believe that research should have as wide a reach as possible and be put to use in making a difference in supporting social change and social justice.
+
+                      As a mission-led, not for profit publisher our goal is to move as much of our research-based publishing to open access as possible, especially work focused on the global social challenges.  </blockquote>
+                    <div class="author-detail">
+                      <div class="name fw-bold text-uppercase pt-2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item">
+                    <blockquote class="fs-3 fw-light">Our monographs, multi-authored and edited works include original scholarly research, thorough and structured reviews of important subjects and engaging works that push forward the boundaries of the disciplines in which we publish </blockquote>
+                    <div class="author-detail">
+                      <div class="name fw-bold text-uppercase pt-2"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item">
+                    <blockquote class="fs-3 fw-light">Please note, we can only accept 
+                      from institutional librarians. If you are not a librarian but would like your institution 
+                      to take up please consider emailing your librarian with your request.
+                       All  requests will need to be sent from an institutional email address. </blockquote>
+                    <div class="author-detail">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-buttons text-center mt-5" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1800" data-aos-once="true">
+            <button class="swiper-prev testimonial-arrow-prev me-2">
+              <svg width="41" height="41">
+                <use xlink:href="#arrow-left"></use>
+              </svg>
+            </button>
+            <span>|</span>
+            <button class="swiper-next testimonial-arrow-next ms-2">
+              <svg width="41" height="41">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="overflow-hidden padding-large pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="footer-top-area pb-5">
+          <div class="row d-flex flex-wrap justify-content-between">
+            <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000"
+              data-aos-once="true">
+              <div class="footer-menu">
+               <h2>Scholars' Shelf </h2>
+                <p>  Embark on an expansive intellectual odyssey with Scholars' Shelf.
+                     We offer more than just books; we provide a gateway to a universe of academic exploration.
+                      </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200"
+              data-aos-once="true">
+              <div class="footer-menu">
+
+               
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200"
+              data-aos-once="true">
+              
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1400"
+              data-aos-once="true">
+              <div class="footer-menu contact-item">
+                <h5 class="widget-title pb-2">Contact info</h5>
+                <ul class="menu-list list-unstyled">
+                  <li class="menu-item pb-2">
+                    <a href="#">Abuja , Nigeria </a>
+                  </li>
+                  <li class="menu-item pb-2">
+                    <a href="#">08028308362</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1600"
+              data-aos-once="true">
+              <div class="footer-menu">
+                <h5 class="widget-title pb-2">Social info</h5>
+                <p>You can follow us on our social platforms to get updates.</p>
+                <div class="social-links">
+                  <ul class="d-flex list-unstyled">
+                    <li>
+                      <a href="#">
+                        <svg class="facebook">
+                          <use xlink:href="#facebook">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="instagram">
+                          <use xlink:href="#instagram">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="twitter">
+                          <use xlink:href="#twitter">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="linkedin">
+                          <use xlink:href="#linkedin">
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="youtube">
+                          <use xlink:href="#youtube">
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="footer-bottom" class="border-top border-dark">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-center">
+        <div class="col-12 text-center">
+          <div class="copyright pt-3">
+            <p>© Copyright 2025 <a href=""
+                target="_blank"><b></b></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Popup -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40"
+              height="40">
+              <use xlink:href="#close-sharp"></use>
+            </svg></button>
+          <div class="ratio ratio-16x9">
+            <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+              allow="autoplay"></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
